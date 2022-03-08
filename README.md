@@ -1,8 +1,14 @@
 
 # sa-filing-2122-performance-tests
 
-This is a placeholder README.md for a new repository
+Running the simulation:
 
-### License
+to run a test against STAGING:-
 
-This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
+sbt -Dperftest.runSmokeTest=false -DrunLocal=false -Dperftest.loadPercentage=10 -Dperftest.labels=Core gatling:test
+
+
+
+to run a smoke test against STAGING:-
+
+sbt -Dperftest.runSmokeTest=true -DrunLocal=false -Dperftest.loadPercentage=10 -Dperftest.labels=Core gatling:test
