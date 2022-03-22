@@ -22,7 +22,7 @@ import uk.gov.hmrc.perftests.safiling.SignInRequests._
 
 object ScenarioConfiguration extends JSONRequestBuilder {
 
-  def createScenarioRequests(journeyFileName: String, percentage: Double, confidenceLevel: Int = 50): Seq[HttpRequestBuilder] =
+  def createScenarioRequests(journeyFileName: String, percentage: Double, confidenceLevel: Int = 250): Seq[HttpRequestBuilder] =
     Seq(
       getAuthSignInPage,
       postAuthLoginWithSaOnly(confidenceLevel)
