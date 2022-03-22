@@ -1,0 +1,2 @@
+version,userId,password,saUtr,firstName,middleName,surname,nino,phoneNumber,email,addressLine1,addressLine2,addressLine3,addressLine4,postcode,_hasChangedAddress,dob,maritalStatus,registeredBlind,studentLoan
+0,perf-sa-${range-10},perf-sa-${range-10},${range-10},name${range-4},mid${range-4},sur${range-4},AA123456A,07${range-9},test1@example.com,1${range-4},2${range-4},3${range-4},4${range-4},SE1 9NN,"",01/01/1970,married,false,false
